@@ -384,6 +384,21 @@ body {
     box-shadow: var(--shadow-hover);
 }
 
+.about-img {
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+    border-radius: var(--border-radius);
+    box-shadow: var(--shadow-medium);
+    transition: var(--transition-smooth);
+    object-fit: cover;
+}
+
+.about-img:hover {
+    transform: translateY(-8px);
+    box-shadow: var(--shadow-hover);
+}
+
 /* ============================================
    SECTION STYLES
    ============================================ */
