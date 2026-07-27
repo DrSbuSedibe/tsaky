@@ -1412,6 +1412,66 @@ section {
 }
 
 /* ============================================
+   WHATSAPP FLOATING BUTTON
+   ============================================ */
+.whatsapp-float {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    width: 60px;
+    height: 60px;
+    background: #25D366;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 20px rgba(37, 211, 102, 0.4);
+    transition: var(--transition-smooth);
+    z-index: 9999;
+    text-decoration: none;
+}
+
+.whatsapp-float:hover {
+    transform: translateY(-4px) scale(1.1);
+    box-shadow: 0 8px 30px rgba(37, 211, 102, 0.6);
+    background: #20bd5a;
+}
+
+.whatsapp-float svg {
+    width: 32px;
+    height: 32px;
+    display: block;
+}
+
+@media (max-width: 768px) {
+    .whatsapp-float {
+        width: 50px;
+        height: 50px;
+        bottom: 20px;
+        right: 20px;
+    }
+
+    .whatsapp-float svg {
+        width: 28px;
+        height: 28px;
+    }
+}
+
+@media (max-width: 480px) {
+    .whatsapp-float {
+        width: 45px;
+        height: 45px;
+        bottom: 15px;
+        right: 15px;
+    }
+
+    .whatsapp-float svg {
+        width: 24px;
+        height: 24px;
+    }
+}
+
+/* ============================================
    UTILITY CLASSES
    ============================================ */
 .text-center {
